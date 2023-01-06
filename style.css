@@ -1,0 +1,41 @@
+body {
+   /* 
+    */
+
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  h1 {
+    color: rgb(5, 1, 24);
+    font-family: Arial;
+  }
+  nav {
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+
+  ul {
+    color: rgb(5, 2, 18);
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    */
+  }
+
+  h2 {
+    color: rgb(234, 19, 116);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  p {
+    color: red;
+    font-family: Verdana;
+    font-size: 20px;
+  }
+  
