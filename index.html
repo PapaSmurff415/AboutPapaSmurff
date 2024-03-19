@@ -12,24 +12,25 @@
 </script>
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Welcome to PapaSmurff</title>
+        <title>Welcome to my site</title>
     </head>
     <body>
         <script src="script.js"></script>
         <header>
-            <h1 style="color: rgb(15, 138, 226); text-align:center">Hello visitors, thanks for checking me out!!</h1>
+            <h1 style="color: rgb(15, 138, 226); text-align:center">Hello visitors! thanks for checking me out...</h1>
         </header>
+        <!--
         <nav>
             <ul>
                 <li><a href="#" style="-webkit-text-fill-color: gray;">Home</a></li>
                 <li><a href="#" style="-webkit-text-fill-color: rgb(244, 109, 13);">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <main>
-            <h2 style="text-align: center; color:rgb(77, 173, 243)">About me</h2>
+            <h2 style="text-align: center; color:rgb(77, 173, 243)">About Me</h2>
             <p style="text-align: center;">Here's a few things about me:</p>
             <ol style="list-style-type: circle; text-align:center;color: white;">
-                <li>I'm a CSE student but a Dumb Dev</li>
+                <li>Computer Science Engineering student</li>
                 <li>Cyber Security Enthuasist</li>
                 <li>Perpetual Infosec student</li>
                 <li>Web Penetration tester</li>
@@ -43,19 +44,34 @@
             </ul>
 
             <p style="text-align: center;">Recently found bugs:</p>
-            <ul style="list-style-type:circle; color:red; text-align:center">
+            <ul style="list-style-type: circle; color: red; text-align: center;">
                 <!--<li style="color: aqua;">LFI on NIELIT,moodle</li> -->
-                <li style="color:cyan;">Broken Access control on Programiz compiler leading to cmd execution on their container.</li>
+                <li style="color: white;">Able to find a CMD execution on <a href="https://www.programiz.com" style="color: cyan;">Programiz</a> leading to their compiler container.</li>
+                <li style="color: white;">Where it was one of my greatest achievement in terms of bug bounty.</li>
+                <li style="color: aliceblue;">And where later on they've ignored it.</li>
+                <li style="color: whitesmoke;">Click the image to zoom in.</li>
+                <img src="find.png" style="width: 100px; height: auto;" onclick="zoomIn(this)">
+                <img src="pov.png" style="width: 100px"; height="auto;" onclick="zoomIn(this)">
             </ul>
-
-            <p style="text-align: center;">My profiles:</p>
-            <ul style="list-style-type:circle; color:rgb(236, 13, 13); text-align:center">
-                <li><a href="https://tryhackme.com/p/S4n17y" style="color:darkcyan">Tryhackme</a></li>
-                <li><a href="https://www.linkedin.com/in/papa-smurff-611bb0167/" style="color: darkcyan;">Linkedin</a></li>
+            <script>
+                function zoomIn(img) {
+                    img.style.width = "900px";
+                    img.style.height = "auto";
+                }
+            </script>
+                        
+            <p style="text-align: center;">My profile</p>
+            <!--<ul style="list-style-type:circle; color:red; text-align:center">
+                <li><a href="https://app.hackthebox.com/profile/669386" style="color:darkcyan">HackTheBox</a></li>
+            </ul> -->
+            <ul style="list-style-type: circle; color: red; text-align: center;">
+                <li style="color: red;"><a href="https://app.hackthebox.com/profile/669386" style="color: darkcyan;">HackTheBox</a></li>
+                <li style="color: red;"><a href="https://tryhackme.com/p/S4n17y" style="color: darkcyan;">Tryhackme</a></li>
+                <li style="color: red;"><a href="https://www.linkedin.com/in/papa-smurff-611bb0167/" style="color: darkcyan;">LinkedIn</a></li>
             </ul>
         </main>
         <footer>
-            <p style="text-align: center; color:darkred;">Copyright &copy; 2023</p>
+            <p style="text-align: center; color:darkred;">Copyright &copy; 2024</p>
         </footer>
     </body>
     </html>
