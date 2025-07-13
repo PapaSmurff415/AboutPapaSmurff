@@ -1,57 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>ProHacker | Ruichumhao Rimai</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D44X09ETK1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-D44X09ETK1');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Welcome to my site</title>
+    <style>
+        @media (max-width: 600px) {
+            header, footer {
+                text-align: center;
+            }
+            main {
+                padding: 10px;
+            }
+            ul{
+                text-align: center;
+                color: aliceblue;
+                padding-left: 0;
+                list-style-position: inside;
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="terminal">
-        <pre class="ascii">
- _____           _     _              _             
-|  __ \         | |   (_)            | |            
-| |__) |__  _ __| |__  _ _ __   ___  | |_ ___  _ __ 
-|  ___/ _ \| '__| '_ \| | '_ \ / _ \ | __/ _ \| '__|
-| |  | (_) | |  | |_) | | | | |  __/ | || (_) | |   
-|_|   \___/|_|  |_.__/|_|_| |_|\___|  \__\___/|_|   
-        </pre>
-
-        <p class="typewriter">[+] Hello visitor... Welcome to my digital lair.</p>
-
-        <h2>About Me</h2>
-        <ul>
-            <li>👨‍💻 Computer Science Engineering Student</li>
-            <li>🛡️ Cyber Security Enthusiast</li>
-            <li>🎯 Web Pentester | Red Teamer | CTF Addict</li>
-            <li>🎓 Infosec student for life</li>
-        </ul>
-
-        <h2>💼 Working Experience</h2>
-        <ul>
-            <li>🌐 Web Coordinator</li>
-        </ul>
-
-        <h2>🐞 Bugs I Found</h2>
-        <ul>
-            <li>⚠️ Command Injection on <a href="https://www.programiz.com" target="_blank">Programiz</a> (Compiler container access)</li>
-            <li>🎯 One of my best finds, though they ignored it 😢</li>
-            <li>🖼️ Click images below to zoom:</li>
-            <li><img src="find.png" width="200" onclick="zoomIn(this)"></li>
-            <li><img src="pov.png" width="200" onclick="zoomIn(this)"></li>
-        </ul>
-
-        <h2>📂 Profiles</h2>
-        <ul>
-            <li><a href="https://app.hackthebox.com/profile/669386" target="_blank">HackTheBox (ProHacker 🏴‍☠️)</a></li>
-            <li><a href="https://tryhackme.com/p/S4n17y" target="_blank">TryHackMe</a></li>
-            <li><a href="https://www.linkedin.com/in/cimkann-rimai-611bb0167/" target="_blank">LinkedIn</a></li>
-        </ul>
-
-        <footer>
-            <p>[~] &copy; 2024 PapaSmurff </p>
-        </footer>
-    </div>
+<header>
+    <h1>Hello visitors! thanks for checking me out...</h1>
+</header>
+<main>
+    <h2>About Me</h2>
+    <p>Here's a few things about me:</p>
+    <ul>
+        <li>Computer Science Engineering student</li>
+        <li>Cyber Security Enthusiast</li>
+        <li>Perpetual Infosec student</li>
+        <li>Web Penetration tester</li>
+        <li>A red teamer</li>
+        <li>CTF player</li>
+    </ul>
+    <p>Working Experience:</p>
+    <ul>
+        <li>Web Coordinator</li>
+    </ul>
+    <p>Recently found bugs:</p>
+    <ul>
+        <li>Able to find a CMD execution on <a href="https://www.programiz.com">Programiz</a> leading to their compiler container.</li>
+        <li>Where it was one of my greatest achievements in terms of bug bounty.</li>
+        <li>And where later on they've ignored it.</li>
+        <li>Click the image to zoom in.</li>
+        <li><img src="find.png" width="200" height="auto" onclick="zoomIn(this)"></li>
+        <li><img src="pov.png" width="200" height="auto" onclick="zoomIn(this)"></li>
+    </ul>
+    <p>My Profile</p>
+    <ul>
+        <li><a href="https://app.hackthebox.com/profile/669386">HackTheBox</a></li>
+        <li><a href="https://tryhackme.com/p/S4n17y">Tryhackme</a></li>
+        <!-- <li><a href="https://www.linkedin.com/in/cimkann-rimai-611bb0167/">LinkedIn</a></li> -->
+        <li><a href="https://www.linkedin.com/in/cimkann-rimai-611bb0167/" target="_blank">LinkedIn</a></li>
+    </ul>
+</main>
+<footer>
+    <p>Copyright &copy; 2024</p>
+</footer>
+<script>
+    function zoomIn(img) {
+        img.style.width = "1000px";
+        img.style.height = "auto";
+    }
+</script>
 </body>
 </html>
